@@ -11,11 +11,11 @@ class TransactionForm extends StatefulWidget {
 }
 
 class _TransactionFormState extends State<TransactionForm> {
+
   //Controladores de texto gamers
   final _controlTitulo = TextEditingController();
   final _controlValor = TextEditingController();
-
-   DateTime _selectedDate = DateTime.now();
+  DateTime _selectedDate = DateTime.now();
 
   _submitform() {
     final title = _controlTitulo.text;
