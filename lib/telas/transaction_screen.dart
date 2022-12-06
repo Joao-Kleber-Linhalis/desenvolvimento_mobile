@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:expenses/models/usuario.dart';
 import 'package:flutter/material.dart';
 import '../components/chart.dart';
 import '../components/transaction_form.dart';
@@ -6,6 +7,10 @@ import '../components/transaction_list.dart';
 import '../models/transaction.dart';
 
 class TransactionScreen extends StatefulWidget {
+
+  Usuario user;
+
+  TransactionScreen(this.user);
 
   @override
   State<TransactionScreen> createState() => _TransactionScreenState();
