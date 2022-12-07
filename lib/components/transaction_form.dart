@@ -1,10 +1,12 @@
+import 'package:expenses/models/usuario.dart';
 import 'package:flutter/material.dart';
 import '/uteis/widgts/CampoTextFormField.dart';
 import 'package:intl/intl.dart';
 
 class TransactionForm extends StatefulWidget {
-  final void Function(String, double,DateTime) onSubmit;
-  TransactionForm(this.onSubmit);
+  final void Function(String, double,DateTime,Usuario) onSubmit;
+  TransactionForm(this.onSubmit,this.usuario);
+  Usuario usuario;
 
   @override
   State<TransactionForm> createState() => _TransactionFormState();
@@ -25,7 +27,7 @@ class _TransactionFormState extends State<TransactionForm> {
     if (title.isEmpty || value <= 0 || _selectedDate == null) {
       return;
     }
-    widget.onSubmit(title, value, _selectedDate);
+    widget.onSubmit(title, value, _selectedDate,widget.usuario);
     _controlTitulo.clear();
     _controlValor.clear();
   }

@@ -21,7 +21,7 @@ class Chart extends StatelessWidget {
         bool sameYear = recentTransaction[i].date.year == weekDay.year;
 
         if (sameDay && sameMonth && sameYear) {
-          totalSum += recentTransaction[i].value;
+          totalSum += recentTransaction[i].value!;
         }
       }
 

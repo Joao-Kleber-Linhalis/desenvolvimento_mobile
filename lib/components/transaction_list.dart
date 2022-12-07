@@ -60,7 +60,7 @@ class TransactionList extends StatelessWidget {
                       ),
                     ),
                     title: Text(
-                      tr.title,
+                      tr.title!,
                       style: Theme.of(context).textTheme.headline6,
                     ),
                     subtitle: Text(
@@ -69,7 +69,7 @@ class TransactionList extends StatelessWidget {
                     trailing: IconButton(
                       icon: Icon(Icons.delete),
                       color: Theme.of(context).errorColor,
-                      onPressed: (() => onRemove(tr.id)),
+                      onPressed: (() => onRemove(tr.id!)),
                     ),
                   ),
                 );
