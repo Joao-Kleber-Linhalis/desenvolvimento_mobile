@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 class Transacation{
@@ -8,7 +9,7 @@ class Transacation{
   String? id_usuario;
 
   Transacation({
-    required this.id,
+    this.id =null,
     required this.title,
     required this.date,
     required this.value,
@@ -16,9 +17,10 @@ class Transacation{
   });
 
   Transacation.fromMap(Map<String, dynamic> map) {
+    Timestamp data = map ["date"];
     title = map["title"];
     value = map["value"];
-    date = map["date"];
+    date = data.toDate();
     id_usuario = map["id_usuario"];
   }
 

@@ -26,7 +26,8 @@ class ExpensesApp extends StatelessWidget {
           //Itens normais
           primary: Colors.purple,
           //Itens de destaque
-          secondary: Colors.amber,
+          secondary: Colors.white,
+          //
         ),
         textTheme: tema.textTheme.copyWith(
             headline6: const TextStyle(

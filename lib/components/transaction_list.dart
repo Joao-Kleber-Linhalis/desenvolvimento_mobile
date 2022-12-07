@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 
 class TransactionList extends StatelessWidget {
   final List<Transacation> _transactions;
-  final Function(String id) onRemove;
+  final Function(int id) onRemove;
 
   TransactionList(this._transactions, this.onRemove);
 
@@ -69,7 +69,7 @@ class TransactionList extends StatelessWidget {
                     trailing: IconButton(
                       icon: Icon(Icons.delete),
                       color: Theme.of(context).errorColor,
-                      onPressed: (() => onRemove(tr.id!)),
+                      onPressed: (() => onRemove(index)),
                     ),
                   ),
                 );
