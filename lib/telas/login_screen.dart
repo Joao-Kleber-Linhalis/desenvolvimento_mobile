@@ -75,6 +75,16 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               marcador_foco: _control.focos_buton,
             ),
+            SizedBox(
+              height: 10,
+            ),
+            Botao(
+              texto: "Cadastrar",
+              cor: Colors.green,
+              ao_clicar: (){
+                _control.cadastrar(context);
+              },
+            ),
           ],
         ),
       ),
