@@ -1,16 +1,7 @@
-# expenses
+# Pig Pay
 
-A new Flutter project.
+Esse projeto foi totalmente focada para a disciplina de Desenvolvimento Mobile, feita em conjunto com https://github.com/matheus3m
 
-## Getting Started
+## Material Utilizado
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Foi utilizado o banco nao relacional e a autenticação da Google,respectivamente, Cloud Firestore e FireBase Auth, conceitos de LayoutBuilder e carregamento de Widgets somente quando necessários e criação de um Chart totalmente manual, partes foram feitas inspiradas em cursos e videos encontrados na Internet a fora e adaptados para esse trabalho, ao final recebemos uma otima avaliação de nosso professor e orientações para futuros projetos. Esse foi o meu começo em Flutter, meu primeiro App.
