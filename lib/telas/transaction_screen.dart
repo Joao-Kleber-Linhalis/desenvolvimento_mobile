@@ -81,10 +81,12 @@ class _TransactionScreenState extends State<TransactionScreen>
     return Scaffold(
       appBar: AppBar(
         title: Text('Despesas Pessoais'),
+        backgroundColor: Theme.of(context).copyWith().colorScheme.primary,
         actions: [
           IconButton(
               onPressed: () => _transactionFormModal(context),
-              icon: Icon(Icons.add))
+              icon: Icon(Icons.add),color: Theme.of(context).copyWith().colorScheme.secondary),
+
         ],
       ),
       body: _body(),

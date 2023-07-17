@@ -22,6 +22,7 @@ class Botao extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
               borderRadius: new BorderRadius.circular(10.0)),
+              backgroundColor: cor,
         ),
         child: mostrar_progress
             ? Center(
