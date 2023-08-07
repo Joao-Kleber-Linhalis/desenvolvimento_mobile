@@ -12,7 +12,7 @@ class TransactionList extends StatelessWidget {
   Widget build(BuildContext context) {
     //Componente pai para delimitar a area do ListView
     return Container(
-      height: MediaQuery.of(context).size.height * 0.6,
+      height: MediaQuery.of(context).size.height * 0.50,
       child: _transactions.isEmpty
           ? Column(
               children: [
